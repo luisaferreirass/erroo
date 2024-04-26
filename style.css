@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+    color: #34355B;
+
+    background: rgb(25,3,97);
+    background: linear-gradient(90deg, rgba(25,3,97,1) 0%, rgba(187,0,255,1) 100%);
+
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+   
+
+h1, h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+main{
+    background-color: white;
+    width: min(42.8rem, 90%);
+    padding: 4.8rem 6.4rem;
+    border-radius: .5rem;
+    box-shadow: 0px 2rem 5rem rgb(0, 0, 0, 0.8);
+    display: grid;
+    place-items: center;
+}
+
+
+.screen1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: max-content;
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}
+
+/*screen2*/
+
+.texto{
+    background-color: #E4EDF1;
+    box-shadow: 2px .2rem .2rem rgb(85, 85, 85, 0.5);
+    padding: 1rem;
+    font-family: "Dancing Script", cursive;
+    animation: opening 4s;
+}
+
+.texto p{
+    color: black;
+    font-size: 2.4rem;
+}
+
+
+
+button{
+background: #FF9500;
+padding: 1.6rem;
+color: white;
+border-radius: .4rem;
+border: none;
+font-family: "DM Sans", sans-serif;
+font-weight: bold;
+font-size: 1.5rem;
+transition: background .3s;
+width: max-content;
+
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #d88716;
+
+}
+
+.screen2{
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    text-align: center;
+    align-items: center;
+}
+
+.screen2 img {
+    margin: 4.3rem 0;
+}
+
+.hide{
+    display: none;
+}
+
+#img1:hover{
+    animation-name: shake;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite; 
+cursor: pointer;
+
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+
+}
+
+
+
+
+@keyframes opening {
+    0%{  
+        transform: translateY(40rem);
+        scale: 0;
+        opacity: 0.2;
+    }
+   
+
+    100%{
+        transform: translateY(0rem);
+        scale: 100%;
+        opacity: 1;
+        
+}
+
+
+}
